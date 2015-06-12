@@ -2,6 +2,17 @@ package com.byron
 
 import org.scalatest._
 
+/*
+ * Problem 07
+ *
+ * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see
+ * that the 6th prime is 13.
+ *
+ * What is the 10 001st prime number?
+ *
+ * Resource: http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf
+ */
+
 abstract class UnitSpec extends FunSpec with Matchers with OptionValues with Inside with Inspectors with BeforeAndAfter
 
 class MySpec extends UnitSpec {

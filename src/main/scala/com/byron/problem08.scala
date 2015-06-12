@@ -4,6 +4,8 @@ import scala.math._
 import scala.io.StdIn
 
 /*
+ * Problem 08
+ *
  * The four adjacent digits in the 1000-digit number that have the greatest
  * product are 9 × 9 × 8 × 9 = 5832.
  *
@@ -45,7 +47,7 @@ class productSeries(n: Int){
   println(highest)
 }
 
-object productSeriesMain {
+object problem08 {
   def main(args: Array[String]) {
     val ps = new productSeries(io.StdIn.readInt())
   }

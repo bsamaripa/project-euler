@@ -4,6 +4,8 @@ import scala.math._
 import scala.io.StdIn
 
 /*
+ * Problem 07
+ *
  * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see
  * that the 6th prime is 13.
  *
@@ -23,7 +25,7 @@ class nthPrime{
   }
 }
 
-object nthPrimeMain {
+object problem07 {
   def main(args: Array[String]) {
     val np = new nthPrime
     println( np.primes( io.StdIn.readInt()-1 ) )
