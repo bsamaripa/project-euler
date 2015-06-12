@@ -15,7 +15,11 @@ import scala.io.StdIn
 
 class multiples{
 
+  var sumMultiList: Long = 3 to 1000 by 1
+
+
 }
+
 
 object problem01 {
   def main(args: Array[String]) {
