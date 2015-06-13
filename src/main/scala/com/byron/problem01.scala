@@ -13,16 +13,13 @@ import scala.io.StdIn
  *
  */
 
-class multiples{
-
-  var sumMultiList: Long = 3 to 1000 by 1
-
-
+class multiples(n: Int) {
+  val answer = (3 until n).toArray.filter(i => (i % 3 == 0) | (i % 5 == 0)).sum
 }
-
 
 object problem01 {
   def main(args: Array[String]) {
-    val m = new multiples
+    val m = new multiples(100)
+    println(m.answer)
   }
 }
