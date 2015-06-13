@@ -1,8 +1,5 @@
 package com.byron
 
-import scala.math._
-import scala.io.StdIn
-
 /*
  * Problem 02
  *
@@ -16,12 +13,17 @@ import scala.io.StdIn
  *
  */
 
-class evenFibs{
+class evenFibs(n: Int) {
+  // Stream of all fibonacci numbers
+  val fib: Stream[Int] = 1 #:: 2 #:: fib.zip(fib.tail).map(n => n._1 + n._2)
 
+  // Take from fib while less than 4 million and even. Sums.
+  val answer: BigInt = fib.takeWhile(e => e < n).filter(f => f%2 == 0 ).sum
 }
 
 object problem02 {
   def main(args: Array[String]) {
-    val ef = new evenFibs
+    val ef = new evenFibs(4000000)
+    println(ef.answer)
   }
 }
