@@ -24,10 +24,13 @@ class TestProblem02 extends UnitSpec {
   }
 }
 
-/*
-class TestProblem03 extends UnitSpec {
 
-}*/
+class TestProblem03 extends UnitSpec {
+  var testFindFactor = new findFactor(600851475143L)
+  describe("The biggest prime factor for "){
+    they("600851475143 should be 6857") { assert(testFindFactor.bruteFactor(600851475143L) === 6857) }
+  }
+}
 
 /*
 class TestProblem04 extends UnitSpec {
