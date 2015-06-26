@@ -42,10 +42,13 @@ class TestProblem05 extends UnitSpec {
 
 }*/
 
-/*
-class TestProblem06 extends UnitSpec {
 
-}*/
+class TestProblem06 extends UnitSpec {
+  var testSumSquares = new SumSquares(100)
+  describe("The difference in sum of squares and square of sums"){
+    they("up to 100 should be 25164150"){assert(testSumSquares.answer == 25164150)}
+  }
+}
 
 /*
  * Testing Broken on Windows. Stack Overflow
