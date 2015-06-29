@@ -70,3 +70,10 @@ class TestProblem08 extends UnitSpec {
     they("13 should be 23514624000") {assert(testSeries.highest._2 === 23514624000L)}
   }
 }
+
+class TestProblem10 extends UnitSpec {
+  val testSeries = new productSeries(13)
+  describe("The sum of a series of adjacent ints") {
+    they("13 should be 23514624000") {assert(testSeries.highest._2 === 23514624000L)}
+  }
+}

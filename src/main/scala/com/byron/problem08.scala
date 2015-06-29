@@ -3,7 +3,7 @@ package com.byron
 import scala.math._
 import scala.io.StdIn
 
-/*
+/**
  * Problem 08
  *
  * The four adjacent digits in the 1000-digit number that have the greatest
